@@ -17,10 +17,10 @@ const sizes = {
  */
 const scene = new THREE.Scene();
 
-const mesh = new THREE.Mesh(
-	new THREE.BoxGeometry(1, 1, 1, 5, 5, 5),
-	new THREE.MeshBasicMaterial({ color: "red" })
-);
+const geometry = new THREE.BoxGeometry(1, 1, 1)
+const material = new THREE.MeshBasicMaterial({ color: "red" })
+
+const mesh = new THREE.Mesh(geometry, material);
 
 scene.add(mesh);
 
